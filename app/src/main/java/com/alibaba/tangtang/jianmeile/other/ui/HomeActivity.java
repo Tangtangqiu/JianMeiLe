@@ -11,6 +11,7 @@ import com.alibaba.tangtang.jianmeile.R;
 import com.alibaba.tangtang.jianmeile.diet.ui.DietFragment;
 import com.alibaba.tangtang.jianmeile.mine.ui.MineFragment;
 import com.alibaba.tangtang.jianmeile.other.base.BaseActivity;
+import com.alibaba.tangtang.jianmeile.other.utils.Exit;
 import com.alibaba.tangtang.jianmeile.other.widget.My_image_View;
 import com.alibaba.tangtang.jianmeile.show.ui.ShowFragment;
 import com.alibaba.tangtang.jianmeile.study.ui.StudyFragment;
@@ -57,8 +58,7 @@ public class HomeActivity extends BaseActivity{
         showButton = (My_image_View) findViewById(R.id.show_ib_home);
         mineButton = (My_image_View) findViewById(R.id.mine_ib_home);
 
-        lastImageButton = trainButton;
-        trainButton.onselect();
+
 
     }
 
@@ -90,6 +90,9 @@ public class HomeActivity extends BaseActivity{
         //默认显示第一个Fragment
         transaction.show(fragmentList.get(0));
         lastFragment = fragmentList.get(0);
+
+        lastImageButton = trainButton;
+        trainButton.onselect();
 
         //一定要提交事务
         transaction.commit();
@@ -172,4 +175,8 @@ public class HomeActivity extends BaseActivity{
         transaction.commit();
     }
 
+    @Override
+    public void onBackPressed(){
+        Exit.exit(HomeActivity.this);
+    }
 }
