@@ -1,15 +1,28 @@
 package com.alibaba.tangtang.jianmeile.other.ui;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import com.alibaba.tangtang.jianmeile.R;
+import com.alibaba.tangtang.jianmeile.other.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends BaseActivity{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int setViewId(){
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void findViews(){
+    }
+
+    @Override
+    protected void init(){
+    }
+
+    @Override
+    protected void initEvent(){
+    }
+
+    @Override
+    protected void loadData(){
     }
 }

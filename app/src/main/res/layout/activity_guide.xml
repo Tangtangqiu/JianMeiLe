@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".other.ui.GuideActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guideActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <TextView
+        android:gravity="center"
+        android:clickable="true"
+        android:id="@+id/tv_guideActivity"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="直接进入健美乐>>"
+        android:textColor="@color/guide_btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TabLayout
+        android:focusable="false"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/tl_guideActivity"
+        android:layout_alignParentBottom="true"
+        android:background="#E1E1E1"
+        app:tabIndicatorHeight="15dp"
+        app:tabIndicatorColor="#838282"
+        android:layout_width="match_parent"
+        android:layout_height="15dp">
+    </android.support.design.widget.TabLayout>
+    <TextView
+        android:id="@+id/now_guideActivity"
+        android:visibility="invisible"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@id/tv_guideActivity"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="立即体验"
+        android:textSize="20sp"
+        android:background="#FF832C"
+        android:layout_width="100dp"
+        android:layout_height="40dp" />
+</RelativeLayout>
