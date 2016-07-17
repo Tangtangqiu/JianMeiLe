@@ -3,8 +3,18 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:text="Fragment_show"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#3B3E48"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:background="#0f0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>

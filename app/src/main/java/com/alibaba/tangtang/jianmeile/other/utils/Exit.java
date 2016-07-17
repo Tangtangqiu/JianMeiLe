@@ -13,6 +13,7 @@ import com.alibaba.tangtang.jianmeile.R;
  * Created by zhaoaiqiu on 2016/7/17.
  */
 public class Exit{
+
     public static final void  exit(final Activity activity){
         final AlertDialog alertDialog = new AlertDialog.Builder(activity).create();
         alertDialog.show();
